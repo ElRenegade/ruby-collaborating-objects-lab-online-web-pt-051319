@@ -3,11 +3,11 @@ class Artist
 
   @@all = [] # array of artists instances
 
-  def initialize(name) 
+  def initialize(name)
     @name = name
-    @songs = [] 
+    @songs = []
   end
-  
+
   def self.all
     @@all
   end
