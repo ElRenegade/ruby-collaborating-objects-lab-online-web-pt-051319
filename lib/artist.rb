@@ -12,8 +12,7 @@ class Artist
   end
 
   def save
-    @@all << self
-
+    @@all << Artist.new
   end
 
   def self.all
