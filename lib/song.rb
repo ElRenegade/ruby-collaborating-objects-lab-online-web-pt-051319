@@ -9,6 +9,7 @@ class Song
       self.name = Song.new(name)
     else
       slef.song.name = name
+    end
   end
 
   def artist=(name)
