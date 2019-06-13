@@ -9,7 +9,11 @@ class MP3Importer
   # files turns the files paths into a string
   # then removes the directory part of the string
   def files
-    @files = Dir.glob("#{@path}/*.mp3").collect { |file| file.gsub("#{@path}/", '') }
+    files = []
+  Dir.new(self.path).each do |file|
+    files << file if file.length > 4
+  end
+  files
   end
 
   # #import takes each normalized filename and sends it to the Song class #new_by_filename
